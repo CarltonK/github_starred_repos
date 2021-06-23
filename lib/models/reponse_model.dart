@@ -191,7 +191,7 @@ class Item {
   int? openIssues;
   int? watchers;
   DefaultBranch? defaultBranch;
-  int? score;
+  double? score;
 
   factory Item.fromJson(Map<String, dynamic> json) => Item(
         id: json["id"] == null ? null : json["id"],
