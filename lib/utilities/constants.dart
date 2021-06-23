@@ -13,6 +13,32 @@ class Constants {
     fontSize: 30,
   );
 
+  static const TextStyle titleStyle = TextStyle(
+    fontWeight: FontWeight.w600,
+    fontSize: 17,
+  );
+
+  /*
+  BORDERS AND DECORATIONS
+  */
+  static BorderRadius borderRadius = BorderRadius.circular(8);
+  static BoxDecoration kBoxDecoration = BoxDecoration(
+    borderRadius: borderRadius,
+    color: Colors.white,
+    boxShadow: [
+      BoxShadow(
+        color: Colors.black54,
+        blurRadius: 3.0,
+        offset: Offset(0, 2),
+      ),
+    ],
+  );
+
+  static BoxDecoration kAvatarDecoration = BoxDecoration(
+    shape: BoxShape.circle,
+    border: Border.all(width: 4),
+  );
+
   /*
   THEMES
   */
