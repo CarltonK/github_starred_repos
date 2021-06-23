@@ -19,6 +19,8 @@ dependencies:
   google_fonts: ^2.1.0
   # Http
   http: ^0.13.3
+  # Spinner
+  flutter_spinkit: ^5.0.0
 
 
 dev_dependencies:
