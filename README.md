@@ -1,6 +1,5 @@
 ### View most starred repos from the last 30 days
 
-<br>
 
 ### Libraries
 - provider
