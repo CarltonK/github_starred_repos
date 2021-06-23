@@ -8,6 +8,8 @@ class ListScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Get Screen Size
+    DeviceConfig().init(context);
     return Scaffold(
       appBar: AppBar(
         title: Text(
