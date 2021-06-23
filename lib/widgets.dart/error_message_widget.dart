@@ -22,7 +22,10 @@ class ErrorMessageWidget extends StatelessWidget {
             color: Constants.appTheme.primaryColor,
           ),
           SizedBox(height: getProportionateScreenHeight(10)),
-          Text(errorMessage, textAlign: TextAlign.center),
+          Text(
+            errorMessage,
+            textAlign: TextAlign.center,
+          ),
         ],
       ),
     );
