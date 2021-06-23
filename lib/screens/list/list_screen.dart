@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'screens.dart';
-import './../utilities/utilities.dart';
+import '../screens.dart';
+import '../../utilities/utilities.dart';
 
 class ListScreen extends StatelessWidget {
   const ListScreen({Key? key}) : super(key: key);
