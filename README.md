@@ -8,7 +8,6 @@
 - flutter_spinkit
 - cached_network_image
 
-<br>
 
 ### How to get it up and running
 flutter run
