@@ -1,12 +1,14 @@
 import 'package:http/http.dart' as http;
 
+import './../models/models.dart';
+
 class ApiProvider {
   /// Initialize an empty constructor
   ApiProvider.empty();
 
   static const String API_URL = 'https://api.github.com/search/repositories';
 
-  Future getStarredRepos() async {
+  Future<ResponseModel> getStarredRepos() async {
     // Date right now
     DateTime dateRightNow = DateTime.now();
     // Date 30 days ago
@@ -18,7 +20,7 @@ class ApiProvider {
     // Day
     int dayAmonthAGo = aMonthAgo.day;
     // Full date a month ago
-    String fullDate = '$yearAMonthAgo-$monthAmonthAgo-$dayAmonthAGo';
+    String fullDate = '$yearAMonthAgo-0$monthAmonthAgo-$dayAmonthAGo';
 
     // Url
     String url = API_URL + '?q=created:>$fullDate&sort=stars&order=desc';
@@ -29,7 +31,9 @@ class ApiProvider {
     );
     // Response
     dynamic dataResponse = dataRequest.body;
-    print('Response: $dataResponse');
-    return null;
+    // Convert body to Dart object
+    ResponseModel resp = responseModelFromJson(dataResponse);
+
+    return resp;
   }
 }
