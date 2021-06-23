@@ -38,23 +38,19 @@ class ListItem extends StatelessWidget {
             model.description != null
                 ? SizedBox(height: getProportionateScreenHeight(8))
                 : Container(),
-            RichText(
-              text: TextSpan(
-                text: 'Starred by: ',
-                style: TextStyle(
-                  color: Colors.black,
-                ),
-                children: [
-                  TextSpan(
-                    text: '${model.stargazersCount} users',
-                    style: TextStyle(
-                      fontWeight: FontWeight.w500,
-                      fontSize: 16,
-                    ),
+            Row(
+              children: [
+                Icon(Icons.star),
+                SizedBox(width: getProportionateScreenWidth(5)),
+                Text(
+                  '${model.stargazersCount}',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 16,
                   ),
-                ],
-              ),
-            )
+                )
+              ],
+            ),
           ],
         ),
         isThreeLine: true,

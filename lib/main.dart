@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Github STarred Repos',
+      title: 'Github Starred Repos',
       debugShowCheckedModeBanner: false,
       theme: Constants.appTheme,
       home: ListScreen(),
