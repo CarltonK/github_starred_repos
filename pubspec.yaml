@@ -21,6 +21,8 @@ dependencies:
   http: ^0.13.3
   # Spinner
   flutter_spinkit: ^5.0.0
+  # Image
+  cached_network_image: ^3.0.0
 
 
 dev_dependencies:
